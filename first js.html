@@ -1,0 +1,57 @@
+
+<html>
+<head>
+    <style>
+        .script{
+            color: red;
+             margin-left: 420px;
+             margin-top: 120px;
+             background-image: url(maths.jpg);
+             background-repeat: no-repeat;
+             font-size: 20px;
+             width: 200%;
+             height: 300px;
+             animation: thahira 3s ease;
+        }
+        @keyframes thahira{
+            0%{
+                transform:rotqte(50deg);
+            }
+            50%{
+                transform: rotqte(90deg);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="script">
+    <script>
+        var deg=parseInt(prompt("Enter deg value:"));
+        var rad=deg*(3.14/180);
+        document.write(`radian value=${rad}`);
+    </script>
+    <hr>
+       <script>
+        var b=parseInt(prompt("Enter b value:"));
+         var h=parseInt(prompt("Enter h value:"));
+         var A=b*h;
+         document.write(`parallelogram value=${A}`);
+       </script>
+       <hr>
+       <script>
+        var a=parseInt(prompt("10"));
+        var b=parseInt(prompt("120"));
+        var Z=a+b;
+        document.write(`added value=${Z}`);
+       </script>
+       <script>
+        var a=parseInt(prompt())
+       </script>
+    </div>
+</body>
+</html>
