@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <button type="button" onclick="armstrongNumber()">Answer</button>
+    <script>
+        function armstrongNumber()
+        {
+            var x=" ";
+            for(var i=1;i<500;i++){
+                temp=i;
+                sum=0;
+                len=temp.toString().length;
+
+                for(var j=1;j<=temp;j++){
+                    d=temp%10;
+                    sum+=Math.pow(d,len);
+                    temp=Math.floor(temp/10);
+
+                }
+                if(sum==i){
+                    x+=i
+                }
+        }
+        return x
+        }
+        function next(){
+            var result=armstrongNumber();
+            document.write(result);
+        }
+    </script>
+    
+</body>
+</html>

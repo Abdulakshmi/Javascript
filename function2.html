@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="primeNumber">Touch!!</button>
+    <script>
+        function primeNumber(){
+          var x=parseInt(prompt("Enter your x value:"));
+        for(var i=x; i<500;i++){
+            
+            f=0;
+        for( j=2; j<i; j++){
+            if(i%j==0){
+                f=1;
+
+               break; 
+            }
+        
+        }
+            if(f==0)
+            {
+                document.write("It is a prime number"+i+'<br>');
+        
+            }
+        
+        }
+    
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+<html>
+<head>
+    <style>
+        .box{
+            margin-top: 50px;
+            margin-left: 100px;
+            font-size: 60px;
+            color: purple;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+    <script>
+        
+        for (var i = 1; i<=4; i++){
+            for (var j = 3; j>=i; j--){
+                document.write("&nbsp&nbsp");
+            }
+            for(var k = 1; k<=i; k++){
+                document.write("*");
+            }
+            
+            for(var l=1; l<i; l++){
+                document.write("*");
+            }
+
+            document.write("<br>");
+        }
+
+        for (var i = 1; i<=3; i++){
+            for (var j = 1; j<=i; j++){
+                document.write("&nbsp&nbsp");
+            }
+            for(var k = 3; k>=i; k--){
+                document.write("*");
+            }
+            
+            for(var l=3; l>i; l--){
+                document.write("*");
+            }
+
+            document.write("<br>");
+        }
+
+    </script>
+    </div>
+</body>
+</html>
