@@ -4,7 +4,7 @@
    
 </head>
 <body>
-    <button type="button" onclick="armstrongNumber()">Answer</button>
+    <button type="button" onclick="next()">Answer</button>
     <script>
         function armstrongNumber()
         {
@@ -14,14 +14,14 @@
                 sum=0;
                 len=temp.toString().length;
 
-                for(var j=1;j<=temp;j++){
+                while(temp>0){
                     d=temp%10;
                     sum+=Math.pow(d,len);
                     temp=Math.floor(temp/10);
 
                 }
                 if(sum==i){
-                    x+=i
+                    x+=(`${i}<br>`);
                 }
         }
         return x
