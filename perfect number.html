@@ -5,17 +5,17 @@
 </head>
 <body>
     <script>
-      var x=parseInt(prompt("Enter your x value:"));
         for(var i=1; x<=500; i++){
+            temp=i;
             sum=0;
-            for (var a=1; a<i;a++){
-                if(i%a==0){
-                    sum+=a;
+            for (var a=1; a<=temp;a++){
+                if(temp%a==0){
+                    sum=sum+a;
                     
                 }
             }
             if(sum==a){
-                document.write( "it is a prime number");
+                document.write( "it is a perfect number+a+"<br>"");
             }
         }
     </script>
